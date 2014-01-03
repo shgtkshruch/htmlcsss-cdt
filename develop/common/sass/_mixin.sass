@@ -1,0 +1,5 @@
+@mixin box-sizing($width, $border-right, $padding-right, $padding-left: $padding-right, $border-left: $border-right)
+  width: $width - $border-right - $padding-right - $padding-left - $border-left
+
+@mixin box-sizing-height($height, $border-top, $padding-top, $padding-bottom: $padding-top, $border-bottom: $border-top)
+  height: $height - $border-top - $padding-top - $padding-bottom - $border-bottom

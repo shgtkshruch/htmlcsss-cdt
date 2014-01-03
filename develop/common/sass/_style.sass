@@ -1,0 +1,338 @@
+@import url(http://fonts.googleapis.com/css?family=Antic+Didone)
+
+body
+  color: $body-color
+
+/* リンク */
+a
+  color: $link-color
+  &:hover
+    color: $hover-color
+
+/* パンくずリスト */
+.topic-path
+  font-size: $small-fz
+
+/* ページの先頭へ戻る */
+.pagetop
+  font-size: $small-fz
+  text-align: right
+  margin-top: $s-margin
+  a
+    background: url("../images/ico_pagetop.png") no-repeat 0 center
+    padding-left: 10px
+
+/* ページ */
+#page
+  width: $body-width
+  margin: 0 auto
+
+/* ページヘッダー */
+#page-head
+  #site-title
+    font-size: $site-title-fz
+    line-height: $site-title-lh / $site-title-fz
+    margin-bottom: 0
+    font-family: 'Antic Didone', serif
+
+  #catchcopy
+    font-size: $catchcopy-fz
+    line-height: $catchcopy-lh / $catchcopy-fz
+
+  /* グローバルナビ */
+  .gloval-nav
+    border: solid #ccc
+    border-width: 1px 0
+    padding: 10px 0
+    ul
+      margin: 0
+      padding: 0
+      +legacy-pie-clearfix
+      li
+        list-style: none
+        float: left
+        +box-sizing(245px, 1px, 10px)
+        border-left: 1px solid $sbd-color
+        padding: 0 10px
+        text-align: center
+        font-size: $main-fz
+        line-height: $p-lh / $main-fz
+        &:first-child
+          border-left: none
+        &.current a
+          background-color: $anchor-hover-color
+        a
+          color: $body-color
+          text-decoration: none
+          display: block
+          padding: 5px 0
+          &:hover
+            background-color: $anchor-hover-color
+
+/* ページフッター */
+#page-foot
+  border-top: 1px solid $sbd-color
+  margin-top: $s-margin / 2
+
+  #copyright small
+    font-size: $small-fz
+    line-height: $small-lh / $small-fz
+
+/* ページボディ */
+#page-body
+  margin-top: $s-margin
+  +legacy-pie-clearfix
+
+#page-body-main
+  width: $main-width
+  float: left
+
+  /* センター寄せ画像 */
+  .image-center
+    text-align: center
+    border-bottom: 1px dotted $sbd-color
+    padding-bottom: $s-margin
+    margin: $s-margin 0
+
+  /* ボタン */
+  .btn
+    text-align: center
+    padding-bottom: $s-margin
+    margin: $s-margin 0
+    border-bottom: 1px dotted $sbd-color
+    a
+      font-size: $heading-a-fz
+      font-weight: bold
+      text-decoration: none
+      color: #fff
+      background-color: $contact-btn-color
+      padding: 10px 20px
+      border-radius: 5px
+      background-image: linear-gradient(to bottom, #92cddb, $contact-btn-color)
+      border: 1px solid $contact-btn-color
+      box-shadow: 1px 1px 0 #9ddded inset
+      text-shadow: 0px -1px 0 #333
+      display: inline-block
+      &:hover
+        opacity: .7
+
+#page-body-sub
+  width: $sub-width
+  float: right
+
+/* ----- サブカラム内の装飾 ----- */
+#page-body-sub
+  h2
+    font-size: $sub-fz
+    line-height: $sub-lh / $sub-fz
+    padding: 5px
+    margin-top: 0
+    border-bottom: 1px solid $sbd-color
+
+  .news-list
+    ul
+      list-style: none
+      padding: 0
+      li
+        font-size: $small-fz
+        line-height: $small-lh / $small-fz
+        margin: 10px 5px
+        time
+          font-weight: bold
+          display: block
+  
+  /* ローカルナビ */
+  .local-nav ul
+    margin: 0 0 30px
+    padding-left: 0
+    li
+      font-size: $small-fz
+      line-height: $small-lh / $small-fz
+      margin-bottom: 12px
+      list-style-type: none
+      background: url("../images/ico_arrow.png") 0 8px no-repeat
+      padding-left: 10px
+
+/* ----- メインカラム内の装飾 -----/*
+#page-body-main
+  p
+    font-size: $main-fz
+    line-height: $p-lh / $main-fz
+    margin-top: 5px
+
+  /* リスト */
+  ul li
+    font-size: $main-fz
+    list-style-type: square
+    line-height: $list-a-fz / $main-fz
+
+  /* 表 */
+  table
+    font-size: $main-fz
+    line-height: $table-a-fz / $main-fz
+    border: 1px solid $sbd-color
+    border-collapse: collapse
+    width: 100%
+    & td
+      border: 1px solid $sbd-color
+      padding: 5px 10px
+    & th
+      @extend td
+      background-color: #eee
+      text-align: left
+    & caption
+      text-align: left
+      font-weight: bold
+
+  /* 画像キャプション */
+  figcaption
+    font-size: $caption-fz
+
+  /* 見出し */
+  .page-title
+    font-size: $page-title-fz
+    line-height: $page-title-lh / $page-title-fz
+    background-color: $page-title-bg-color
+    padding: 5px 15px
+    margin-top: 0
+
+  .heading-typeA
+    font-size: $heading-a-fz
+    line-height: $heading-a-lh / $heading-a-fz
+    color: $bd-color-a
+    border-bottom: 1px solid $bd-color-a
+    padding: 5px
+
+  .heading-typeB
+    font-size: $heading-b-fz
+    line-height: $heading-b-lh / $heading-b-fz
+    border-left: 3px solid $bd-color-b
+    padding-left: 10px
+
+  .heading-typeC
+    font-size: $heading-c-fz
+    line-height: $heading-c-lh / $heading-c-fz
+
+  /* 区切り線・余白 */
+  .article-detail-head
+    border-bottom: 1px solid $sbd-color
+    margin-bottom: $s-margin
+    padding-bottom: $s-padding
+
+  .article-detail-foot
+    border-top: 1px solid $sbd-color
+    margin-top: $s-margin
+    padding-top: $s-padding
+
+  .article-detail-body section
+    margin: $s-margin 0
+
+  .credit-unit
+    padding: $c-padding
+    border: 1px solid $sbd-color
+    +legacy-pie-clearfix
+    p
+      font-size: $credit-p-fz
+      line-height: $credit-p-lh / $credit-p-fz
+      margin: 0
+    .credit-unit-text
+      float: right
+      width: 378px
+    .credit-unit-map
+      float: left
+      width: 200px
+
+/*
+ 「つくったもの」一覧ページ */
+#page-body-main
+  .article-list
+    border: 1px solid $sbd-color
+    margin-bottom: $s-margin
+    a
+      display: block
+      padding: 10px
+      color: $body-color
+      text-decoration: none
+      +legacy-pie-clearfix
+      &:hover
+        opacity: .7
+      .article-list-text
+        float: right
+        width: 370px
+        h1
+          font-size: $page-title-fz
+          line-height: $page-title-lh / $page-title-fz
+      .article-list-image
+        float: left
+        width: 300px
+        img
+          vertical-align: bottom
+
+/* ----- トップページの内容 ----- */
+/* メインビジュアル */
+#page-body 
+  .main-visual
+    position: relative
+    img
+      vertical-align: bottom
+    .main-visual-text
+      position: absolute
+      left: 50px
+      bottom: 50px
+      color: #fff
+      background-color: rgba(0,0,0,.4)
+      +box-sizing(400px, 0, 25px)
+      padding: 15px 25px
+      h1
+        font-size: $page-title-fz   
+        line-height: $page-title-lh / $page-title-fz
+        margin: 0
+      p
+        font-size: $small-fz
+        line-height: $small-lh / $small-fz
+        margin-bottom: 0
+    ul
+      margin: 0
+      padding: 0
+      list-style-type: none
+      li
+        position: relative
+
+  /* 「つくったもの」Index */
+  .portfolio-index
+    margin-top: 40px
+    +legacy-pie-clearfix
+    article
+      width: 300px
+      float: left
+      margin-left: 40px
+      &:first-child
+        margin-left: 0
+      h2
+        font-size: $heading-a-fz
+        line-height: $heading-a-lh /$heading-a-fz
+        margin: 5px 0
+      p
+        margin-top: 0
+        font-size: $small-fz
+        line-height: $small-lh /$small-fz
+  /* お知らせ */
+  .news
+    margin-top: 40px
+    h1
+      font-size: 20px
+      border-bottom: 1px solid $sbd-color
+      padding: 5px 0
+    table 
+      width: 100%
+      tr
+        td
+          font-size: $main-fz
+          line-height: $p-lh / $main-fz
+          border-bottom: 1px dotted $sbd-color
+          padding: 10px 0
+          vertical-align: top
+        th
+          @extend td
+          padding-right: 30px
+

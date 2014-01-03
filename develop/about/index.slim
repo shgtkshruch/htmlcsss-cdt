@@ -1,0 +1,106 @@
+- html5shivDir= "bower_components/html5shiv/dist"
+- modernizzrDir = "bower_components/modernizr"
+
+doctype 5
+/[if lt IE 7]
+  <html lang="ja" class="no-js ie6">
+
+/[if IE 7]
+  <html lang="ja" class="no-js ie7">
+
+/[if IE 8]
+  <html lang="ja" class="no-js ie8">
+
+html lang="ja" class="no-js"
+  head
+    meta charset="UTF-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    title わたしたちについて | komorikomasha（こもりこましゃ）
+
+    meta name="author" content=""
+    meta name="description" content=""
+    meta name="keywords" content=""
+    / About the Robots <META> tag
+      http://www.robotstxt.org/meta.html
+      <meta name="robots" content="noindex, follow">
+      <meta name="robots" content="index, nofollow">
+      <meta name="robots" content="noindex, nofollow">
+    meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    meta name="format-detection" content="telephone=no"
+
+    meta property="og:title" content="記事のタイトル"
+    / トップページはwebsite、個別ページはarticle
+    meta property="og:type" content="article"
+    meta property="og:description" content="記事の説明"
+    meta property="og:url" content="記事のURL"
+    meta property="og:image" content="画像のURL"
+    meta property="og:site_name" content="サイトのタイトル"
+    meta property="og:locale" content="言語"
+    / できればfb:app_idを利用
+    meta property="fb:admins" content="facebookのユーザーID"
+    meta property="fb:app_id" content="facebookのアプリID"
+
+    link rel="stylesheet" href="../common/css/style.css" media="all"
+
+    /[if lt IE 9]
+      script src="#{html5shivDir}/html5shiv.js"
+      script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"
+      script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"
+
+    script src="http://code.jquery.com/jquery-1.10.2.min.js"
+    script src="js/script.js"
+  body
+    #page
+      header#page-head
+        h1#site-title komorikomasha
+        p#catchcopy 1人じゃできないことも、力を合わせればできる。やってみたいをカタチにする、3人の楽しいものづくり。
+        nav.gloval-nav
+          ul
+            li
+              a href="../index.html" ホーム
+            li.current
+              a href="index.html" わたしたちについて
+            li
+              a href="../portfolio/index.html" つくったもの
+            li
+              a href="../contact/index.html" おといあわせ
+
+      p.topic-path 
+        a<> href="../index.html" ホーム
+        | &gt; わたしたちについて
+
+      #page-body
+        #page-body-main
+          article.article-detail
+            h1.page-title わたしたちについて
+            .image-center
+              img src="images/img_01.png" alt="" width="202" height="253"
+              p あんなこといいな。できたらいいな。
+              p みんなで力を合わせれば、今までできなかったこと、きっとできるようになる。
+              p ちょっと大変な時でも、仲間と一緒ならがんばれる。だから、いつでも楽しいこと考えよう、やってみよう、つくってみよう。
+              p このサイトでは、コモモ・モリコ・ひろましゃのメンバーが勢いでつくったものを紹介しています。
+
+        #page-body-sub
+          section.news-list
+            h2 お知らせ
+            ul
+              li 
+                time 2013.10.01
+                |コモモとモリコで、書籍「HTML/CSSの教科書（仮題）」を執筆中です。お楽しみに。
+              li 
+                time 2013.10.01
+                |コモモ・モリコ・ひろましゃ3人のサイト「komorikomasha」をオープンしました。
+
+      p.pagetop
+        a href="#page" ページの先頭へ戻る
+
+      footer#page-foot
+        p#copyright 
+          small Copyright&copy; 2013 @komorikomasha All Rights Reseraved.
+
+    / grunt-contrib-watch
+    script src="//localhost:35729/livereload.js"
+
+    / browser_sync setting
+      script src='http://192.168.11.2:3000/socket.io/socket.io.js'
+      script src='http://192.168.11.2:3001/browser-sync-client.min.js'

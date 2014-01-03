@@ -1,0 +1,157 @@
+- html5shivDir= "bower_components/html5shiv/dist"
+- modernizzrDir = "bower_components/modernizr"
+
+doctype 5
+/[if lt IE 7]
+  <html lang="ja" class="no-js ie6">
+
+/[if IE 7]
+  <html lang="ja" class="no-js ie7">
+
+/[if IE 8]
+  <html lang="ja" class="no-js ie8">
+
+html lang="ja" class="no-js"
+  head
+    meta charset="UTF-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    title komorikomasha(こもりこましゃ)
+
+    meta name="author" content=""
+    meta name="description" content=""
+    meta name="keywords" content=""
+    / About the Robots <META> tag
+      http://www.robotstxt.org/meta.html
+      <meta name="robots" content="noindex, follow">
+      <meta name="robots" content="index, nofollow">
+      <meta name="robots" content="noindex, nofollow">
+    meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    meta name="format-detection" content="telephone=no"
+
+    meta property="og:title" content="記事のタイトル"
+    / トップページはwebsite、個別ページはarticle
+    meta property="og:type" content="article"
+    meta property="og:description" content="記事の説明"
+    meta property="og:url" content="記事のURL"
+    meta property="og:image" content="画像のURL"
+    meta property="og:site_name" content="サイトのタイトル"
+    meta property="og:locale" content="言語"
+    / できればfb:app_idを利用
+    meta property="fb:admins" content="facebookのユーザーID"
+    meta property="fb:app_id" content="facebookのアプリID"
+
+    link rel="stylesheet" href="common/css/style.css" media="all"
+
+    /[if lt IE 9]
+      script src="#{html5shivDir}/html5shiv.js"
+      script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"
+      script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"
+
+    script src="http://code.jquery.com/jquery-1.10.2.min.js"
+    script src="common/jquery.bxslider/jquery.bxslider.js"
+    link rel="stylesheet" href="common/jquery.bxslider/jquery.bxslider.css" media="all"
+    script src="js/script.js"
+    script
+      |$(document).ready(function(){
+        $('.bxslider').bxSlider({
+          auto: true,
+          speed: 1000,
+          pause: 4000
+        });
+      |});
+  body
+    #page
+      header#page-head
+        h1#site-title komorikomasha
+        p#catchcopy 1人じゃできないことも、力を合わせればできる。やってみたいをカタチにする、3人の楽しいものづくり。
+        nav.gloval-nav
+          ul
+            li.current
+              a href="index.html" ホーム
+            li
+              a href="about/index.html" わたしたちについて
+            li
+              a href="portfolio/index.html" つくったもの
+            li
+              a href="contact/index.html" おといあわせ
+      #page-body
+        section.main-visual
+          ul.bxslider
+            li
+              .main-visual-text
+                h1 バッタになりたい魔法使い
+                p 
+                  |コモモ・ひろましゃ制作のWeb仕掛け絵本
+                  br
+                  |合い言葉は、バッタになっちゃえ！
+              img src="images/mainVisual_img_03.jpg" alt="" width="980" height="500"
+            li
+              .main-visual-text
+                h1 WordPressデザインワークブック
+                p コモモとひろましゃ二人の共著によるwordpressで本格的なウェブサイトを制作したい方向けの書籍 
+              img src="images/mainVisual_img_02.jpg" alt="" width="980" height="500"
+            li
+              .main-visual-text
+                h1 Cade Debut
+                p 
+                  |baserCMS カフェサイト用テーマ
+                  br
+                  |baserCMS2012 テーマコンテスト　飲食店系テーマ賞受賞
+              img src="images/mainVisual_img_01.jpg" alt="" width="980" height="500"
+
+        section.portfolio-index
+          article
+            a href="portfolio/03.html"
+              img src="portfolio/images/index_03.jpg" alt="" width="300" height="163"
+            a href="portfolio/03.html"
+              h2 バッタになりたい魔法使い
+            p 
+              |コモモ・ひろましゃ制作のWeb仕掛け絵本
+              br
+              |合い言葉は、バッタになっちゃえ！
+
+          article
+            a href="portfolio/02.html"
+              img src="portfolio/images/index_02.jpg" alt="" width="300" height="163"
+            a href="portfolio/02.html"
+              h2 WordPressデザインワークブック
+            p コモモとひろましゃ二人の共著によるwordpressで本格的なウェブサイトを制作したい方向けの書籍
+
+          article
+            a href="portfolio/01.html"
+              img src="portfolio/images/index_01.jpg" alt="" width="300" height="163"
+            a href="portfolio/01.html"
+              h2 Cafe Debut
+            p 
+              |basercmsのカフェサイト用汎用テーマ
+              br
+              |テーマコンテスト2012飲食店系テーマ賞受賞
+
+        section.news
+          h1 お知らせ
+          table
+            tr
+              th 
+                time datetime="2013-10-01" 2013年10月1日
+              td コモモとモリコで、書籍「HTML/CSSの教科書（仮題）」を執筆中です。お楽しみに。
+            tr
+              th 
+                time datetime="2013-10-01" 2013年10月1日
+              td 
+                |コモモ・モリコ・ひろましゃ3人のサイト「komorikomasha」をオープンしました。
+                br
+                |3人で制作したウェブサイトやサービス、その他諸々の活動を紹介・お知らせしていく予定です。どうぞよろしくお願いいたします。
+
+      p.pagetop
+        a href="#page" ページの先頭へ戻る
+
+      footer#page-foot
+        p#copyright 
+          small Copyright&copy; 2013 @komorikomasha All Rights Reseraved.
+
+    / grunt-contrib-watch
+    script src="//localhost:35729/livereload.js"
+
+    / browser_sync setting
+      script src='http://192.168.11.2:3000/socket.io/socket.io.js'
+      script src='http://192.168.11.2:3001/browser-sync-client.min.js'

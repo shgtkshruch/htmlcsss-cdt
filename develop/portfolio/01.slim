@@ -1,0 +1,184 @@
+- html5shivDir= "bower_components/html5shiv/dist"
+- modernizzrDir = "bower_components/modernizr"
+
+doctype 5
+/[if lt IE 7]
+  <html lang="ja" class="no-js ie6">
+
+/[if IE 7]
+  <html lang="ja" class="no-js ie7">
+
+/[if IE 8]
+  <html lang="ja" class="no-js ie8">
+
+html lang="ja" class="no-js"
+  head
+    meta charset="UTF-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    title Cafe Debut | komorikomasha（こもりこましゃ）
+
+    meta name="author" content=""
+    meta name="description" content=""
+    meta name="keywords" content=""
+    / About the Robots <META> tag
+      http://www.robotstxt.org/meta.html
+      <meta name="robots" content="noindex, follow">
+      <meta name="robots" content="index, nofollow">
+      <meta name="robots" content="noindex, nofollow">
+    meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    meta name="format-detection" content="telephone=no"
+
+    meta property="og:title" content="記事のタイトル"
+    / トップページはwebsite、個別ページはarticle
+    meta property="og:type" content="article"
+    meta property="og:description" content="記事の説明"
+    meta property="og:url" content="記事のURL"
+    meta property="og:image" content="画像のURL"
+    meta property="og:site_name" content="サイトのタイトル"
+    meta property="og:locale" content="言語"
+    / できればfb:app_idを利用
+    meta property="fb:admins" content="facebookのユーザーID"
+    meta property="fb:app_id" content="facebookのアプリID"
+
+    link rel="stylesheet" href="../common/css/style.css" media="all"
+
+    /[if lt IE 9]
+      script src="#{html5shivDir}/html5shiv.js"
+      script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"
+      script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"
+
+    script src="http://code.jquery.com/jquery-1.10.2.min.js"
+    script src="js/script.js"
+  body
+    #page
+      header#page-head
+        h1#site-title komorikomasha
+        p#catchcopy 1人じゃできないことも、力を合わせればできる。やってみたいをカタチにする、3人の楽しいものづくり。
+        nav.gloval-nav
+          ul
+            li
+              a href="../index.html" ホーム
+            li
+              a href="../about/index.html" わたしたちについて
+            li.current
+              a href="index.html" つくったもの
+            li
+              a href="../contact/index.html" おといあわせ
+      
+      p.topic-path 
+        a<> href="../index.html" ホーム
+        | &gt;
+        a<> href="index.html" つくったもの 
+        | &gt; Cafe Dubut
+
+      #page-body
+        #page-body-main
+          article.article-detail
+            header.article-detail-head
+              h1.page-title Cafe Debut
+              img src="images/img_01_01.jpg" alt="" width="720" height="390"
+              p 
+                |baser CMS カフェサイト用テーマ
+                br
+                |baser CMS テーマコンテスト2012 飲食店系テーマ賞受賞（
+                a href="http://contest.basercms.net/" 受賞結果はこちら
+                |）
+
+            section.article-detail-body
+              h2.heading-typeA いますぐ、はじめられるカフェサイトテーマ！
+              p baserCMSは、「コーポレートサイトにちょうどいい」をキャッチコピーにしたcake PHPベースの国産CMS。Cafe Debutは、baseCMSのテーマコンテスト2012に応募するために、チームこもりこましゃで作成しました。
+              p baserCMSのインストールと、Cafe Debutテーマの初期設定を行ったら、あとはあなたのスマートフォンのInstagramで写真を撮っていくだけ。
+              p Instagramのおしゃれ写真で、すぐに素敵なカフェサイトが出来上がっちゃうフォトログ風baserCMSテーマです。
+
+              table
+                caption 制作担当
+                tr
+                  th コモモ
+                  td 企画・デザイン・baserCMSテーマのベース組み込み担当
+                tr
+                  th モリコ
+                  td HTML/CSSコーディング担当
+                tr
+                  th ひろまし
+                  td プラグイン制作、テーマ実装の難しいところとか担当
+
+              section
+                h3.heading-typeB プラグインでInstagramと連携
+                figure
+                  img src="images/img_01_02.jpg" alt="撮影した料理の写真もすぐにトップページで確認できます。" width="720" height="390"
+                  figcaption 今日のランチのローストビーフサンドを撮影♪
+                p プラグインでInstagramと連携して、トップページにInstagramで撮影した写真がすぐに反映されます。
+
+              section
+                h3.heading-typeB レスポンシブデザインでスマートフォン、タブレット表示も快適
+                figure
+                  img src="images/img_01_03.jpg" alt="スマートフォン・ダブレット・パソコンで表示を確認すると、それぞれレイアウトが変わります。" width="720" height="390"
+                  figcaption 左からiPhone, iPad, MacBook Airで表示確認
+                p さまざまなデバイスの表示対応に、レスポンシブデザインを採用しました。Instagramでお店のメニューを撮影してすぐにスマートフォンで確認できるのも嬉しい♪
+
+              section
+                h3.heading-typeB Webフォントだから、飾り文字やアイコンもキレイ
+                figure
+                  img src="images/img_01_04.jpg" alt="スマートフォンの画面でも文字とアイコンの表示が劣化しません。" width="720" height="390"
+                  figcaption iPhoneの画面に近づいても、キレイ
+                p サイトのタイトルやナビゲーション、主要な見出しはGoogle Web Font、アイコンはウェブフォント（Fontello）を採用しています。拡大縮小されるスマートフォンやタブレットでも解像度を気にすることなくキレイな文字とアイコン表示を実現できました。
+
+            footer.article-detail-foot
+              section
+                h2.heading-typeC 関連リンク
+                ul
+                  li 
+                    a href="#" Cafe Debutのダウンロード
+                  li
+                    a href="#" Cafe Debutのデモページ
+                  li
+                    a href="#" baser CMS公式サイト
+                  li
+                    a href="#" Instagram公式サイト
+
+              aside.credit-unit
+                .credit-unit-text
+                  p 撮影協力
+                  h2.heading-typeC kitchen nest
+                  p 北海道札幌市中央区南３条西８丁目 大洋ビル２階
+                  ul
+                    li
+                      a href="#" http://www.nest-kitchen.jp
+                    li
+                      a href="#" Facebookページ
+                  p Cafe Debutテーマのイメージ撮影にご協力いただきました。とっても素敵なお店です。
+                .credit-unit-map
+                  <iframe width="300" height="180" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%93%E6%9D%A1%E8%A5%BF%EF%BC%98%E4%B8%81%E7%9B%AE+%E5%A4%A7%E6%B4%8B%E3%83%93%E3%83%AB%EF%BC%92%E9%9A%8E&amp;ie=UTF8&amp;hq=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%93%E6%9D%A1%E8%A5%BF%EF%BC%98%E4%B8%81%E7%9B%AE+%E5%A4%A7%E6%B4%8B%E3%83%93%E3%83%AB%EF%BC%92%E9%9A%8E&amp;hnear=&amp;radius=15000&amp;ll=43.056147,141.346488&amp;spn=0.003547,0.008256&amp;t=m&amp;z=14&amp;vpsrc=6&amp;iwloc=B&amp;cid=9659614106821610379&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%93%E6%9D%A1%E8%A5%BF%EF%BC%98%E4%B8%81%E7%9B%AE+%E5%A4%A7%E6%B4%8B%E3%83%93%E3%83%AB%EF%BC%92%E9%9A%8E&amp;ie=UTF8&amp;hq=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%93%E6%9D%A1%E8%A5%BF%EF%BC%98%E4%B8%81%E7%9B%AE+%E5%A4%A7%E6%B4%8B%E3%83%93%E3%83%AB%EF%BC%92%E9%9A%8E&amp;hnear=&amp;radius=15000&amp;ll=43.056147,141.346488&amp;spn=0.003547,0.008256&amp;t=m&amp;z=14&amp;vpsrc=6&amp;iwloc=A&amp;cid=9659614106821610379&amp;source=embed" style="color:#0000FF;text-align:left">大きな地図で見る</a></small>
+
+        #page-body-sub
+          nav.local-nav
+            ul
+              li
+                a href="03.html" バッタになりたい魔法使い
+              li
+                a href="02.html" WordPressデザインワークブック
+              li
+                a href="01.html" Cafe Debut
+          section.news-list
+            h2 お知らせ
+            ul
+              li 
+                time 2013.10.01
+                |コモモとモリコで、書籍「HTML/CSSの教科書（仮題）」を執筆中です。お楽しみに。
+              li 
+                time 2013.10.01
+                |コモモ・モリコ・ひろましゃ3人のサイト「komorikomasha」をオープンしました。
+
+      p.pagetop
+        a href="#page" ページの先頭へ戻る
+
+      footer#page-foot
+        p#copyright 
+          small Copyright&copy; 2013 @komorikomasha All Rights Reseraved.
+
+    / grunt-contrib-watch
+    script src="//localhost:35729/livereload.js"
+
+    / browser_sync setting
+      script src='http://192.168.11.2:3000/socket.io/socket.io.js'
+      script src='http://192.168.11.2:3001/browser-sync-client.min.js'

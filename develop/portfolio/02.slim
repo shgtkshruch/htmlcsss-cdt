@@ -1,0 +1,179 @@
+- html5shivDir= "bower_components/html5shiv/dist"
+- modernizzrDir = "bower_components/modernizr"
+
+doctype 5
+/[if lt IE 7]
+  <html lang="ja" class="no-js ie6">
+
+/[if IE 7]
+  <html lang="ja" class="no-js ie7">
+
+/[if IE 8]
+  <html lang="ja" class="no-js ie8">
+
+html lang="ja" class="no-js"
+  head
+    meta charset="UTF-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    title WordPressデザインワークブック | komorikomasha（こもりこましゃ）
+
+    meta name="author" content=""
+    meta name="description" content=""
+    meta name="keywords" content=""
+    / About the Robots <META> tag
+      http://www.robotstxt.org/meta.html
+      <meta name="robots" content="noindex, follow">
+      <meta name="robots" content="index, nofollow">
+      <meta name="robots" content="noindex, nofollow">
+    meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    meta name="format-detection" content="telephone=no"
+
+    meta property="og:title" content="記事のタイトル"
+    / トップページはwebsite、個別ページはarticle
+    meta property="og:type" content="article"
+    meta property="og:description" content="記事の説明"
+    meta property="og:url" content="記事のURL"
+    meta property="og:image" content="画像のURL"
+    meta property="og:site_name" content="サイトのタイトル"
+    meta property="og:locale" content="言語"
+    / できればfb:app_idを利用
+    meta property="fb:admins" content="facebookのユーザーID"
+    meta property="fb:app_id" content="facebookのアプリID"
+
+    link rel="stylesheet" href="../common/css/style.css" media="all"
+
+    /[if lt IE 9]
+      script src="#{html5shivDir}/html5shiv.js"
+      script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"
+      script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"
+
+    script src="http://code.jquery.com/jquery-1.10.2.min.js"
+    script src="js/script.js"
+  body
+    #page
+      header#page-head
+        h1#site-title komorikomasha
+        p#catchcopy 1人じゃできないことも、力を合わせればできる。やってみたいをカタチにする、3人の楽しいものづくり。
+        nav.gloval-nav
+          ul
+            li
+              a href="../index.html" ホーム
+            li
+              a href="../about/index.html" わたしたちについて
+            li.current
+              a href="index.html" つくったもの
+            li
+              a href="../contact/index.html" おといあわせ
+      
+      p.topic-path 
+        a<> href="../index.html" ホーム
+        | &gt;
+        a<> href="index.html" つくったもの 
+        | &gt; WordPressデザインワークブック
+
+      #page-body
+        #page-body-main
+          article.article-detail
+            header.article-detail-head
+              h1.page-title WordPressデザインワークブック
+              img src="images/img_02_01.jpg" alt="" width="720" height="390"
+              p 
+                |WordPressテーマカスタマイズの入門書
+                br
+                a href="http://www.amazon.co.jp/dp/4881669281" Amazonでのご購入はこちら
+
+            section.article-detail-body
+              h2.heading-typeA ウェブ制作のワークフローに沿った実践的な解説書
+              p 「WordPressデザインワークブック」は、コモモとひろましゃのコンビで執筆したWordPressテーマカスタマイズの入門書です。
+              p 2つのサンプルサイトを元に、実際のサイト制作のワークフローに沿って開発環境で作業を進めるところからスタートし、本番サーバへの移行やバックアップの方法まで、クライアントワークで必要になってくる実践的なノウハウを数多く掲載しています。
+
+              table
+                caption 制作担当
+                tr
+                  th コモモ
+                  td 
+                    |サンプルサイトのデザイン、HTML/CSSコーディング、WordPressの基本実装
+                    br
+                    |書籍執筆者
+                tr
+                  th ひろましゃ
+                  td 
+                    |サンプルサイトのWordPress実装のうち、難しそうなPHPプログラム部分担当
+                    br
+                    |書籍執筆
+
+              section
+                h3.heading-typeB WordPressの基礎をちゃんと積み上げたい方へ
+                p ウェブデザイナーが実務としてサイト制作を行う際に、「WordPressの設計思想を知って、WordPressを柔軟に使いこなせるようになること」を目標に書きました。
+                p 通り一遍のウェブサイトを作れるようになるだけじゃなくて、もう一歩WordPressへ踏み込み、自分のやりたいことに応用できるようになってもらえたら嬉しいです。
+                figure
+                  img src="images/img_02_02.jpg" alt="撮影した料理の写真もすぐにトップページで確認できます。" width="720" height="390"
+
+              section
+                h3.heading-typeB ウェブデザイナーの女の子に読んでもらいたい
+                p 
+                  |2つのサンプルサイトのうち、ひとつは札幌にある実在のクレープ屋さん「nino」のサイトです。
+                  br
+                  |ウェブデザイナーの女の子に、クレープ食べたいなぁって考えながら読んでもらえたらいいな(^ ^)
+                figure
+                  img src="images/img_02_03.jpg" alt="スマートフォン・ダブレット・パソコンで表示を確認すると、それぞれレイアウトが変わります。" width="720" height="390"
+
+            footer.article-detail-foot
+              section
+                h2.heading-typeC 関連リンク
+                ul
+                  li 
+                    a href="#" Amazon（WordPressデザインワークブック3.4対応）
+                  li
+                    a href="#" WordPressデザインワークブック3.4対応サポートページ
+                  li
+                    a href="#" ソーテック社
+                  li
+                    a href="#" コモモのまえがき：「WordPress デザインワークブック 3.4対応」を執筆しました！
+                  li
+                    a href="#" ひろましゃのあとがき：「WordPress デザインワークブック 3.4対応」を執筆しました！
+
+              aside.credit-unit
+                p 撮影協力
+                h2.heading-typeC nico
+                p 札幌市豊平区月寒東2条6丁目1-17
+                ul
+                  li
+                    a href="#" http://www.nest-kitchen.jp
+                p 
+                  |WordPressデザインワークブックのサンプルサイトとしても登場するクレープ屋さん。
+                  br
+                  |おからの入ったクレープ生地はふかふかでおいしいよ。
+
+        #page-body-sub
+          nav.local-nav
+            ul
+              li
+                a href="03.html" バッタになりたい魔法使い
+              li
+                a href="02.html" WordPressデザインワークブック
+              li
+                a href="01.html" Cafe Debut
+          section.news-list
+            h2 お知らせ
+            ul
+              li 
+                time 2013.10.01
+                |コモモとモリコで、書籍「HTML/CSSの教科書（仮題）」を執筆中です。お楽しみに。
+              li 
+                time 2013.10.01
+                |コモモ・モリコ・ひろましゃ3人のサイト「komorikomasha」をオープンしました。
+
+      p.pagetop
+        a href="#page" ページの先頭へ戻る
+
+      footer#page-foot
+        p#copyright 
+          small Copyright&copy; 2013 @komorikomasha All Rights Reseraved.
+
+    / grunt-contrib-watch
+    script src="//localhost:35729/livereload.js"
+
+    / browser_sync setting
+      script src='http://192.168.11.2:3000/socket.io/socket.io.js'
+      script src='http://192.168.11.2:3001/browser-sync-client.min.js'
